@@ -1,0 +1,43 @@
+-- --------------------------------------------------------
+-- Host:                         127.0.0.1
+-- Server version:               8.1.0 - MySQL Community Server - GPL
+-- Server OS:                    Win64
+-- HeidiSQL Version:             12.1.0.6537
+-- --------------------------------------------------------
+
+/*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
+/*!40101 SET NAMES utf8 */;
+/*!50503 SET NAMES utf8mb4 */;
+/*!40103 SET @OLD_TIME_ZONE=@@TIME_ZONE */;
+/*!40103 SET TIME_ZONE='+00:00' */;
+/*!40014 SET @OLD_FOREIGN_KEY_CHECKS=@@FOREIGN_KEY_CHECKS, FOREIGN_KEY_CHECKS=0 */;
+/*!40101 SET @OLD_SQL_MODE=@@SQL_MODE, SQL_MODE='NO_AUTO_VALUE_ON_ZERO' */;
+/*!40111 SET @OLD_SQL_NOTES=@@SQL_NOTES, SQL_NOTES=0 */;
+
+-- Dumping data for table books.products: ~4 rows (approximately)
+DELETE FROM `products`;
+INSERT INTO `products` (`id`, `bookname`, `author`, `genre`, `price`) VALUES
+	(1, 'IT', 'Stephen King', 'Horror', 10),
+	(2, 'The Hobbit', 'JRR Tolkien', 'Fantasy', 10),
+	(3, 'Dracula', 'Bram Stoker', 'Horror', 15),
+	(4, 'Frankenstein', 'Mary Shelley', 'Horror', 12);
+
+-- Dumping data for table books.user: ~10 rows (approximately)
+DELETE FROM `user`;
+INSERT INTO `user` (`id`, `firstname`, `lastname`, `email`, `age`, `password`, `date`) VALUES
+	(1, 'brian', 'mcnally', 'mc@gmail.com', 36, 'bnally', NULL),
+	(2, 'terry', 'murphy', 'mur@gmail.com', 23, 'murph23', NULL),
+	(3, 'pattie', 'jenkins', 'jen@gmail.com', 64, 'pajen', NULL),
+	(4, 'jevon', 'weissnat', 'wes@gmail.com', 12, 'jevnat', NULL),
+	(5, 'conner', 'weisley', 'weis@gmail.com', 78, 'weisner12', NULL),
+	(6, 'kelly', 'smith', 'smith@gmail.com', 45, 'smith65', NULL),
+	(7, 'lily', 'buckley', 'buck@gmail.com', 27, 'bucko82', NULL),
+	(8, 'thomas', 'o&#039;keeffe', 'keeffe@gmail.com', 45, 'keefe78', NULL),
+	(9, 'elizabeth', 'maguire', 'mag@gmail.com', 67, 'mags22', NULL),
+	(11, 'conor', 'gallagher', 'gall@gmail.com', 19, 'gally23', NULL);
+
+/*!40103 SET TIME_ZONE=IFNULL(@OLD_TIME_ZONE, 'system') */;
+/*!40101 SET SQL_MODE=IFNULL(@OLD_SQL_MODE, '') */;
+/*!40014 SET FOREIGN_KEY_CHECKS=IFNULL(@OLD_FOREIGN_KEY_CHECKS, 1) */;
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40111 SET SQL_NOTES=IFNULL(@OLD_SQL_NOTES, 1) */;
